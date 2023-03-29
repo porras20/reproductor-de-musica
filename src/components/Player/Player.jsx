@@ -6,9 +6,11 @@ import { SpotifyBody } from './styles';
 
 export default function Player() {
   return (
-    <SpotifyBody>
+   <>
+      <SpotifyBody>
         <Sidebar/>
         <Body/>
-    </SpotifyBody>
+      </SpotifyBody>
+   </>
   )
 }

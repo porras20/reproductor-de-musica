@@ -17,7 +17,7 @@ const loginURL = `${endPoint}?client_id=${clientID}&response_type=token&redirect
 export default function Login() {
   return (
     <LoginContainer>
-        <img src="../../Logo.png" alt="" />
+        <img src="../../Logo.png" alt="Logo" />
         <LoginButton href={loginURL}>Login whith spotify</LoginButton>
     </LoginContainer>
   )
