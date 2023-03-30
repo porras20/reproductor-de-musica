@@ -28,7 +28,7 @@ export default function Header() {
           <Grid container spacing={2}>
             <Grid item><ListIcon /></Grid>
             <Grid item><VolumeDown /></Grid>
-            <Grid item md><Slider /></Grid>
+            <Grid item xs><Slider /></Grid>
           </Grid>
         </HeaderRight>
     </HeaderContainer>

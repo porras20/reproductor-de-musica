@@ -38,6 +38,7 @@ const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2rem;
     background-color: #CBE4DE;
     color: #000;
     h1{
@@ -50,10 +51,9 @@ const HeaderLeft = styled.div`
     display: flex;
     max-width: 300px;
     img{
+        margin-right: 1rem;
         height: 100%;
         width: 4rem;
-        margin-right: 1rem;
-        margin-left: 1rem;
         object-fit: contain;
         border-radius: 1rem
 
@@ -78,6 +78,9 @@ const HeaderDiv = styled.div`
 
 const HeaderRight = styled.div`
     flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 `
 
