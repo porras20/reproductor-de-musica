@@ -1,13 +1,15 @@
 import React from 'react'
 import { Container, Left, Right } from './styles'
-import SearchIcon from '@mui/icons-material/Search';
 import { Avatar } from '@mui/material';
+import { selectUser } from '../../features/UserSlice';
+import { useSelector } from 'react-redux';
 
 export default function BodyHeader() {
+  const user = useSelector(selectUser);
+  console.log(user);
   return (
     <Container>
         <Left>
-        <SearchIcon/>
         <input type="text" placeholder='Busca tu canción'/>
         </Left>
         <Right>

@@ -1,8 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { useReducer } from "../features/UserSlice";
-
+import  userReducer  from "../features/UserSlice";
+import  tokenReducer  from "../features/TokenSlice";
+import playlistReducer from '../features/PlaylistSlice';
 export default configureStore({
-    reducers: {
+    reducer: {
         user: userReducer,
+        token: tokenReducer,
+        playlist: playlistReducer,
     }
 })

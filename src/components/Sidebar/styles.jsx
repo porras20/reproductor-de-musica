@@ -9,9 +9,6 @@ const SidebarContainer = styled.div`
     height: 100vh;
     background-color: #2E4F4F;
     color: #fff;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
     padding-top: 1rem;
     img{
         width: 15rem;
