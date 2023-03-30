@@ -13,8 +13,8 @@ export default function BodyHeader() {
         <input type="text" placeholder='Busca tu canción'/>
         </Left>
         <Right>
-          <Avatar/>
-          <h4>Juanjosepo18</h4>
+          <Avatar src={user?.images[0].url}/>
+          <h4>{user?.display_name}</h4>
         </Right>
     </Container>
   )
