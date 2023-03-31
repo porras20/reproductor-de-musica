@@ -2,7 +2,7 @@ import { PlayCircleOutline, Repeat, Shuffle, SkipNext, SkipPrevious, VolumeDown 
 import ListIcon from '@mui/icons-material/List';
 import { Grid, Slider } from '@mui/material'
 import React from 'react'
-import { HeaderContainer, HeaderCenter, HeaderLeft, HeaderRight, HeaderDiv } from './styles'
+import { HeaderContainer, HeaderCenter, HeaderLeft, HeaderRight } from './styles'
 
 
 export default function Header() {
@@ -16,13 +16,11 @@ export default function Header() {
           </div>
         </HeaderLeft>
         <HeaderCenter>
-          <HeaderDiv></HeaderDiv>
           <Shuffle/>
           <SkipPrevious />
           <PlayCircleOutline />
           <SkipNext />
           <Repeat />
-          <HeaderDiv></HeaderDiv>
         </HeaderCenter>
         <HeaderRight>
           <Grid container spacing={2}>

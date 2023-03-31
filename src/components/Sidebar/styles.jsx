@@ -27,11 +27,14 @@ const SidebarContainer = styled.div`
     h4:hover, h2:hover{
         color: #000;
     }
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `
 const SidebarIcons = styled.div`
     display: flex;
     flex-direction: column;
-    
     padding: 2rem 0;
 `
 

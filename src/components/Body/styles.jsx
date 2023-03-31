@@ -7,6 +7,12 @@ const BodyContainer = styled.div`
     overflow-y: overlay;
     height: 100vh;
     color: #fff;
+
+    @media (max-width: 768px) {
+       flex: 1;
+       padding: 1rem;
+       overflow-y: scroll;
+    }
 `
 
 const Container = styled.div`
@@ -62,7 +68,15 @@ const HeaderLeft = styled.div`
         width: 4rem;
         object-fit: contain;
         border-radius: 1rem
+    }
+    @media screen and (max-width: 925px){
+        h4, p{
+            display: none;
+        }
+    }
 
+    @media screen and (max-width: 580px){
+        display: none;
     }
 
 `
@@ -73,20 +87,32 @@ const HeaderCenter = styled.div`
     justify-content: space-evenly;
     align-items: center;
     max-width: 320px;
+
+    @media screen and (max-width: 925px){
+       justify-content: space-between;
+    }
+
+    @media screen and (max-width: 580px){
+        flex: 0.5;
+    }
     
 `
-
-const HeaderDiv = styled.div`
-    height: 50px;
-    width: 2px;
-    background-color: #fff;
-`
-
 const HeaderRight = styled.div`
     flex: 0.3;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 925px) {
+        flex: 0.4;
+        path{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 580px){
+        flex: 0.5;
+    }
 
 `
 const Info = styled.div`
@@ -146,7 +172,8 @@ const SongRowContainer = styled.div`
 const SongInfo = styled.div`
 
 `
+
 export {BodyContainer , HeaderContainer, Left, Right, 
         Container, HeaderCenter, HeaderLeft, HeaderRight, 
-        HeaderDiv, Info, InfoText, Songs,
-        Icons, SongRowContainer, SongInfo}
+        Info, InfoText, Songs, Icons, 
+        SongRowContainer, SongInfo}
