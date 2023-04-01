@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap');
 
-
+:root{    --default-color: #000000 !important; /*color principal*/    --default-back: #eef0f4 !important; /*color de fondo*/    --font-color: #fff ; /*color de la fuente*/}
 *{
     margin: 0;
     padding: 0;

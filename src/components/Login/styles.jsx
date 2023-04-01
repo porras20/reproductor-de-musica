@@ -13,7 +13,6 @@ const LoginContainer = styled.div`
 const LoginButton = styled.a`
     padding: 20px;
     background-color: #19376D;
-    border-radius: 90px;
     color: white;
     text-decoration: none;
     text-transform: uppercase;

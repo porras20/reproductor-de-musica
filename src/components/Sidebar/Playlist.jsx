@@ -42,7 +42,11 @@ export default function Playlist() {
           {
             Array.isArray(playlists) ?
             playlists.map((item, index) => (
-                <h3 onClick={() => handleIdPlaylist(item.id)} key={item.id}>{item.name}</h3>
+                <h3 
+                  className='hvr-shrink'
+                  onClick={() => handleIdPlaylist(item.id)} 
+                  key={item.id}>{item.name}
+                  </h3>
             )) : null
           }
           </div>

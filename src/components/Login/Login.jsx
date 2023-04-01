@@ -6,7 +6,7 @@ export default function Login() {
   return (
     <LoginContainer>
         <img src="../../Logo.png" alt="Logo" />
-        <LoginButton href={loginURL}>Login whith spotify</LoginButton>
+        <LoginButton href={loginURL} className='hvr-sweep-to-right'>Login whith spotify</LoginButton>
     </LoginContainer>
   )
 }
