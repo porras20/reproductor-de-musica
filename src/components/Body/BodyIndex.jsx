@@ -2,10 +2,15 @@ import React, { useState } from 'react'
 import { Container, Left, Right } from './styles'
 import { Avatar } from '@mui/material';
 import { selectUser } from '../../features/UserSlice';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { SET_SEARCH } from '../../features/SearchSlice';
 export default function BodyHeader() {
 
   const [busqueda, setBusqueda] = useState('');
+  const dispatch = useDispatch()
+  dispatch(SET_SEARCH(busqueda));
+
+  
   const user = useSelector(selectUser);
 
   return (

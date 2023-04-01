@@ -32,7 +32,7 @@ const SidebarContainer = styled.div`
         flex-direction: row;
         height: 20vh;
         width: 100vw;
-        position: fixed;
+        position: absolute;
         padding: 0;
         bottom: 0;
         img, hr{

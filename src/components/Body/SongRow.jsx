@@ -1,6 +1,7 @@
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { SongInfo, SongRowContainer } from "./styles"
 import { SET_TRACK } from "../../features/TrackSlice"
+
 
 export default function SongRow({track}) {
     const dispatch = useDispatch();

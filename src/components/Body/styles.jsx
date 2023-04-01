@@ -71,13 +71,15 @@ const HeaderLeft = styled.div`
         border-radius: 1rem
     }
     @media screen and (max-width: 925px){
-        h4, p{
+        p{
             display: none;
         }
     }
 
     @media screen and (max-width: 580px){
-        display: none;
+        img{
+            display: none
+        }
     }
 
 `
@@ -112,7 +114,7 @@ const HeaderRight = styled.div`
     }
 
     @media screen and (max-width: 580px){
-        flex: 0.5;
+        display: none;
     }
 
 `

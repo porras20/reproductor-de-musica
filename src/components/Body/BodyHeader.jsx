@@ -5,8 +5,6 @@ import { HeaderContainer, HeaderCenter, HeaderLeft, HeaderRight } from './styles
 import { useSelector } from 'react-redux';
 import { selectTrack } from '../../features/TrackSlice';
 
-
-
 export default function Header() {
     const track = useSelector(selectTrack);
     
