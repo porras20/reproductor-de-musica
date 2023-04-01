@@ -3,24 +3,21 @@ import ListIcon from '@mui/icons-material/List';
 import { Grid, Slider } from '@mui/material'
 import React, { useEffect } from 'react'
 import { HeaderContainer, HeaderCenter, HeaderLeft, HeaderRight } from './styles'
-import { useDispatch } from 'react-redux';
-import { SET_TRACK } from '../../features/TrackSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { SET_TRACK, selectTrack } from '../../features/TrackSlice';
+
 
 
 export default function Header() {
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    dispatch(SET_TRACK('Probando'))
-  }, [])
-  
+    const track = useSelector(selectTrack);
+    
   return (
     <HeaderContainer>
         <HeaderLeft>
-          <img src="../../album.jpg" alt="" />
+          <img src={track.album.images[0].url} alt="" />
           <div>
-            <h4>Shape of me heart</h4>
-            <p>Sting</p>
+            <h4>{track.name}</h4>
+            <p>{track.artists[0].name}</p>
           </div>
         </HeaderLeft>
         <HeaderCenter>

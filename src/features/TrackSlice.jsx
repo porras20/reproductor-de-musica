@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const trackSlice = createSlice({
   name: "track",
   initialState: {
-    track: null,
+    track: [],
   },
   reducers: {
     SET_TRACK: (state, action) => {
-      state.playlist = action.payload;
+      state.track = action.payload;
     },
   },
 });
