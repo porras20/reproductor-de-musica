@@ -1,7 +1,9 @@
+import { useSelector } from "react-redux"
 import { SongInfo, SongRowContainer } from "./styles"
 
-export default function SongRow({track}) {
 
+export default function SongRow({track}) {
+    
     const setTrack = (track) =>{
         
     }

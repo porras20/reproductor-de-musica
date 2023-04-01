@@ -38,15 +38,14 @@ export default function Playlist() {
   return (
       <PlayList>
           <h2>Playlists</h2>
+         <div className='name_playlist'>         
           {
             Array.isArray(playlists) ?
             playlists.map((item, index) => (
-              <div key={item.id} className='playlistCard'>
-                {/* <img src={item.images[0].url} alt="" /> */}
-                <h3 onClick={() => handleIdPlaylist(item.id)}>{item.name}</h3>
-              </div>
+                <h3 onClick={() => handleIdPlaylist(item.id)} key={item.id}>{item.name}</h3>
             )) : null
           }
+          </div>
       </PlayList>
   )
 }

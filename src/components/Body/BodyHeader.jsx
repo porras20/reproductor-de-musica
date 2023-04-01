@@ -1,11 +1,19 @@
 import { PlayCircleOutline, Repeat, Shuffle, SkipNext, SkipPrevious, VolumeDown } from '@mui/icons-material'
 import ListIcon from '@mui/icons-material/List';
 import { Grid, Slider } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { HeaderContainer, HeaderCenter, HeaderLeft, HeaderRight } from './styles'
+import { useDispatch } from 'react-redux';
+import { SET_TRACK } from '../../features/TrackSlice';
 
 
 export default function Header() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(SET_TRACK('Probando'))
+  }, [])
+  
   return (
     <HeaderContainer>
         <HeaderLeft>

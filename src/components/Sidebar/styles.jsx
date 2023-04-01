@@ -29,13 +29,30 @@ const SidebarContainer = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        display: none;
+        flex-direction: row;
+        height: 20vh;
+        width: 100vw;
+        position: fixed;
+        padding: 0;
+        bottom: 0;
+        img, hr{
+            display: none;
+        }
     }
 `
 const SidebarIcons = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
+    @media screen and (max-width:768px){
+        flex: 0.5;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0;
+    }
+    @media screen and (max-width: 500px){
+        display: none
+    }
 `
 
 const PlayList = styled.div`
@@ -43,15 +60,18 @@ const PlayList = styled.div`
     flex-direction:column;
     justify-content: center;
     font-size: 1rem;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
+
+    //Titulo
     h2{
         font-size: 1.5rem;
         margin-bottom: 1rem;
         font-weight: bold;
+        color: #000;
     }
-
-    .playlistCard{
+    /* Nombre de canciones */
+    h3{
         color: #fff;
         margin-bottom: 1rem;
         display: flex;
@@ -62,10 +82,20 @@ const PlayList = styled.div`
             transition: 0.2s ease;
             color: #
         }
-        img{
-            background-color:red;
-            width: 2rem;
-        }
+    }
+    @media screen and (max-width: 768px){
+       flex: 0.5;
+       align-items: center;
+       .name_playlist{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+       }
+    }
+
+    @media screen and (max-width: 500px){
+        flex: 1;
+        font-size: 0.8rem;
     }
 `
 
