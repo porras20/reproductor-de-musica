@@ -5,13 +5,13 @@ import { SET_TRACK } from "../../features/TrackSlice"
 export default function SongRow({track}) {
     const dispatch = useDispatch();
     const setTrack = (track) =>{
-        dispatch(SET_TRACK(track));
+        dispatch(SET_TRACK([track]));
     }
    
   return (
-    <SongRowContainer className="hvr-sweep-to-bottom">
+    <SongRowContainer className="hvr-sweep-to-bottom" onClick={() => setTrack(track)}>
         <img src={track.album.images[0].url} alt="Album" />
-        <SongInfo onClick={() => setTrack(track)}>
+        <SongInfo >
             <h4>{track.name}</h4>
             <p>
                 {

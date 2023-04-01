@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Container, Left, Right } from './styles'
 import { Avatar } from '@mui/material';
 import { selectUser } from '../../features/UserSlice';

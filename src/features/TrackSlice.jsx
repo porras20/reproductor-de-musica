@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const trackSlice = createSlice({
   name: "track",
   initialState: {
-    track: [],
+    track: '',
   },
   reducers: {
     SET_TRACK: (state, action) => {
