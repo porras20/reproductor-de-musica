@@ -39,11 +39,36 @@ const SidebarIcons = styled.div`
 `
 
 const PlayList = styled.div`
-    margin: 5px 10px;
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    font-size: 1rem;
     color: #000;
-    font-weight: bold;
     text-transform: uppercase;
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .playlistCard{
+        color: #fff;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        
+        :hover{
+            cursor: pointer;
+            transition: 0.2s ease;
+            color: #
+        }
+        img{
+            background-color:red;
+            width: 2rem;
+        }
+    }
 `
+
+
 
 export {SidebarContainer, SidebarIcons, PlayList}

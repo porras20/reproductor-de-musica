@@ -25,6 +25,7 @@ function App() {
       dispatch(SET_TOKEN(_token))
       spotify.setAccessToken(_token);
       spotify.getMe().then(user => dispatch(SET_USER(user)))
+      spotify.getUserPlaylists()
       spotify.getPlaylist('3IboOPbJJuIyRPqlB21ysH').then(playlist => 
         dispatch(SET_PLAYLIST(playlist)))
     }

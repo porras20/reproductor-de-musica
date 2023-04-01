@@ -1,10 +1,15 @@
 import { SongInfo, SongRowContainer } from "./styles"
 
 export default function SongRow({track}) {
+
+    const setTrack = (track) =>{
+        
+    }
+   
   return (
     <SongRowContainer>
         <img src={track.album.images[0].url} alt="Album" />
-        <SongInfo>
+        <SongInfo onClick={() => setTrack(track)}>
             <h4>{track.name}</h4>
             <p>
                 {
