@@ -10,7 +10,7 @@ export default function SongRow({track}) {
     }
    
   return (
-    <SongRowContainer className="hvr-sweep-to-bottom" onClick={() => setTrack(track)}>
+    <SongRowContainer className="" onClick={() => setTrack(track)}>
         <img src={track.album.images[0].url} alt="Album" />
         <SongInfo >
             <h4>{track.name}</h4>

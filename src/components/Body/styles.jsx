@@ -158,10 +158,8 @@ const SongRowContainer = styled.div`
     align-items: center;
     z-index: 90;
     transition: 0.1s ease-in-out;
-    
     :hover{
         cursor: pointer;
-        opacity: 0.8;
     }
     img{
         height: 4rem;

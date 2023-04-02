@@ -6,10 +6,13 @@ import { selectPlaylist } from "../../features/PlaylistSlice";
 import { Favorite, MoreHoriz, PlayCircleFilled } from "@mui/icons-material";
 import SongRow from "./SongRow";
 import { selectSearch } from "../../features/SearchSlice";
+import { useEffect, useState } from "react";
 
 export default function Body() {
   const playlist = useSelector(selectPlaylist);
   const busqueda = useSelector(selectSearch);
+
+  
 
   return (
     <BodyContainer>
@@ -31,7 +34,8 @@ export default function Body() {
         {
           playlist?.tracks?.items.map((item, index) => (
             <SongRow track={item.track} key={index} />
-            ))}
+            ))
+        }
         
       </Songs>
     </BodyContainer>
