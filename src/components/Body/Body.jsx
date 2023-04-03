@@ -6,7 +6,7 @@ import { selectPlaylist } from "../../features/PlaylistSlice";
 import { Favorite, MoreHoriz, PlayCircleFilled } from "@mui/icons-material";
 import SongRow from "./SongRow";
 import { selectSearch } from "../../features/SearchSlice";
-import { useEffect, useState } from "react";
+import NewPlaylist from "./NewPlaylist";
 
 export default function Body() {
   const playlist = useSelector(selectPlaylist);
@@ -38,6 +38,7 @@ export default function Body() {
         }
         
       </Songs>
+      <NewPlaylist/>
     </BodyContainer>
   );
 }

@@ -172,8 +172,49 @@ const SongRowContainer = styled.div`
 const SongInfo = styled.div`
 
 `
+const NewPlaylistContainer = styled.div`
+    position: fixed;
+    bottom: 2rem;
+    right: 0;
+    display: flex;
+`
+const OptionPlaylist = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CBE4DE;
+    width: 10rem;
+    height: 11rem;
+    border-radius: 1rem;
+    color: #000;
+    font-size: 1rem;
+    padding: 0.5rem;
+
+    p{
+        margin-bottom: 0.5rem;
+        transition: border-bottom 2s;
+        cursor: pointer;
+        font-weight: bold;
+    }
+`
+const Icon = styled.div`
+    height: 4rem;
+    width: 4rem;
+    background-color: #2E4F4F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-end;
+    position: relative;
+    right: 3rem;
+    top: 1rem;
+`
+
 
 export {BodyContainer , HeaderContainer, Left, Right, 
         Container, HeaderCenter, HeaderLeft, HeaderRight, 
         Info, InfoText, Songs, Icons, 
-        SongRowContainer, SongInfo}
+        SongRowContainer, SongInfo, NewPlaylistContainer, Icon, OptionPlaylist}

@@ -17,7 +17,12 @@ const scopes = [
     "user-read-recently-played",
     "user-read-playback-state",
     "user-top-read",
-    "user-modify-playback-state"]
+    "user-modify-playback-state",
+    "playlist-read-private",
+    "playlist-read-collaborative",
+    "playlist-modify-public",
+    "playlist-modify-private",
+    "playlist-read-collaborative",]
 export const loginURL = `${endPoint}?client_id=${clientID}&response_type=token&redirect_uri=${redirectUri}&scope=${scopes.join(
   "%20"
 )}&show_dialog=true`;
