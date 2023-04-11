@@ -177,6 +177,13 @@ const NewPlaylistContainer = styled.div`
     bottom: 2rem;
     right: 0;
     display: flex;
+
+    @media screen and (max-width: 767px){
+        bottom: 10rem;
+    }
+    @media screen and (max-width : 500px){
+        bottom: 25rem;
+    }
 `
 const OptionPlaylist = styled.div`
     display: flex;
@@ -195,6 +202,10 @@ const OptionPlaylist = styled.div`
         transition: border-bottom 2s;
         cursor: pointer;
         font-weight: bold;
+    }
+
+    @media screen and (max-width: 500px){
+
     }
 `
 const Icon = styled.div`
